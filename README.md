@@ -56,6 +56,8 @@ This WI-FI Pentest Tool is designed for testing the target Wi-Fi router. It’s 
 more effectively and it helps the user to record the useful data. So, let’s start with the options design.
 
 ![image](https://user-images.githubusercontent.com/51657418/110150310-14507a00-7e1a-11eb-9dac-4de766c22d40.png)
+
+
 This page displays the wireless adapter interface, chipset, hardware driver.
 
 **Tools:** Aircrack-ng
@@ -63,7 +65,10 @@ This page displays the wireless adapter interface, chipset, hardware driver.
 
 
 Attack Method page
+
 ![image](https://user-images.githubusercontent.com/51657418/110150505-4f52ad80-7e1a-11eb-9650-09814001efa5.png)
+
+
 After select the wireless adapter, there are fewer button which can execute the attack’s command. 
 It would show on below, let us click DE-link button first.
 
@@ -71,6 +76,8 @@ It would show on below, let us click DE-link button first.
 ## Scenario 1: WPA/WPA2 Personal Standard
 
 ![image](https://user-images.githubusercontent.com/51657418/110150632-714c3000-7e1a-11eb-9455-ea517816385c.png)
+
+
 
 This page shows the scanning result on the table that each result would upload on the table.
 
@@ -83,6 +90,8 @@ Select and double click the table bar when your target was shown on the bottom t
 
 ![image](https://user-images.githubusercontent.com/51657418/110150723-8b860e00-7e1a-11eb-959e-d1de7fd7086b.png)
 
+
+
 After the user selected the target, the application would ask for confirmation since it would shut down the WIFI connection of the targeted device.
 
 **Tools: Aircrack-ng
@@ -91,9 +100,13 @@ Command:     aireplay-ng -0 10 -a {BSSID} -c {device mac address} wlan0mon**
 
 ![image](https://user-images.githubusercontent.com/51657418/110150771-99d42a00-7e1a-11eb-9177-2e005a943c9f.png)
 
+
+
 After the user clicked the “DE-link start” button, a loading page will be directed. It means the application is launching the de-link attack to the target.
 
 ![image](https://user-images.githubusercontent.com/51657418/110150798-a062a180-7e1a-11eb-8c3f-a9644f4c5376.png)
+
+
 
 After a few seconds, if the application captured the 4-way handshake successfully, a result page will be directed, and a message will be pop up to inform the user the attack is completed as expected.
 
@@ -101,6 +114,8 @@ After a few seconds, if the application captured the 4-way handshake successfull
 ## Scenario 2: WPA3 Personal Standard 
 
 ![image](https://user-images.githubusercontent.com/51657418/110150892-bf613380-7e1a-11eb-9a20-c9f5383f6622.png)
+
+
 
 This page shows the scan result on the table that each result would upload on the table.
 
@@ -111,6 +126,8 @@ Command:      airmon-ng start wlan0
 airodump-ng wlan0mon**
 
 ![image](https://user-images.githubusercontent.com/51657418/110150926-c8ea9b80-7e1a-11eb-928b-54635094fe18.png)
+
+
 
 Next, a message will be pop up to inform the user downgrade attack could be applied to the targeted device.
 
@@ -123,9 +140,13 @@ Command:     aireplay-ng -0 10 -a {BSSID} -c {device mac address} wlan0mon**
 
 ![image](https://user-images.githubusercontent.com/51657418/110151001-e15ab600-7e1a-11eb-98f0-2751a73e2855.png)
 
+
+
 After the user clicked the “DE-link start” button, a loading page will be directed. It means the application is launching the de-link attack to the target.
 
 ![image](https://user-images.githubusercontent.com/51657418/110151015-e7509700-7e1a-11eb-95ab-9b557a8acfcd.png)
+
+
 
 After a few seconds, if the application captured the 4-way handshake successfully, a result page will be directed, and a message will be pop up to inform the user the attack is completed as expected.
 
@@ -135,6 +156,7 @@ After a few seconds, if the application captured the 4-way handshake successfull
 ## Scenario: WPA/WPA2 Personal Standard
 
 ![image](https://user-images.githubusercontent.com/51657418/110151729-cb99c080-7e1b-11eb-8a3c-ec75335580b4.png)
+
 
 This page shows the different attack methods to the target. First, click the “AP-less” button to perform further action.
 
@@ -158,6 +180,7 @@ After the user clicked the “AP-less” button, a loading page will be directed
 
 ![image](https://user-images.githubusercontent.com/51657418/110151816-e3714480-7e1b-11eb-94ea-d09d61bf4e2b.png)
 
+
 If the user associated with the rouge wireless access point and the 4-way handshake is captured successfully, a result page will be directed, and a message will be pop up to inform the user the attack is completed as expected.
 
 
@@ -166,7 +189,9 @@ If the user associated with the rouge wireless access point and the 4-way handsh
 
 ![image](https://user-images.githubusercontent.com/51657418/110151847-eb30e900-7e1b-11eb-89b7-67f1e36885be.png)
 
+
 This page shows the different attack methods to the target. First, click the “AP-less” button to perform further action.
+
 ![image](https://user-images.githubusercontent.com/51657418/110151863-f1bf6080-7e1b-11eb-9829-e2d4b7687ad3.png)
 
 
@@ -182,9 +207,11 @@ Command: airodump-ng -c {channel} --bssid {BSSID} -w {the files location} wlan0m
 
 ![image](https://user-images.githubusercontent.com/51657418/110151902-fedc4f80-7e1b-11eb-8ac3-d554289c4738.png)
 
+
 After the user clicked the “AP-less” button, a loading page will be directed. It means the application is launching the AP-less attack and building a rogue wireless access point for the target to associate with.
 
 ![image](https://user-images.githubusercontent.com/51657418/110151950-0ef42f00-7e1c-11eb-8044-106f51fa6511.png)
+
 
 If the user associated with the rouge wireless access point and the 4-way handshake is captured successfully, a result page will be directed, and a message will be pop up to inform the user the attack is completed as expected.
 
@@ -192,9 +219,11 @@ If the user associated with the rouge wireless access point and the 4-way handsh
 
 ![image](https://user-images.githubusercontent.com/51657418/110151990-19aec400-7e1c-11eb-81b9-0db51fae8466.png)
 
+
 This page shows the different attack methods to the target. First, click the “AP-less” button to perform further action.
 
 ![image](https://user-images.githubusercontent.com/51657418/110151997-1e737800-7e1c-11eb-8f0d-8fb0cae92426.png)
+
 
 In this page, information of wireless access point will be display on the table.
 
@@ -212,14 +241,63 @@ Command: (1) sed -i '15c ssid="+{ESSID}+"' /etc/hostapd-wpe/hostapd-wpe.conf
 
 ![image](https://user-images.githubusercontent.com/51657418/110152060-35b26580-7e1c-11eb-9888-3212feff435d.png)
 
+
 After the user clicked the “AP-less” table row, a loading page will be directed. It means the application is launching the Enterprise Standard attack and building a rogue wireless access point for the target to associate with.
 
 ![image](https://user-images.githubusercontent.com/51657418/110152077-3ba84680-7e1c-11eb-93fc-90f739817298.png)
+
 
 If the user associated with the rouge wireless access point and the 4-way handshake is captured successfully, a result page will be directed, and a message will be pop up to inform the user the attack is completed as expected.
 
 ## Attack Vector: Client-Less 
 ## Scenario: WPA/WPA2 Personal Standard
+
+![image](https://user-images.githubusercontent.com/51657418/110152352-9641a280-7e1c-11eb-9b24-d6e0b28c2da9.png)
+
+
+This page shows the different attack methods to the target. First, click the “Client-less” button to perform further action. 
+
+![image](https://user-images.githubusercontent.com/51657418/110152370-9c378380-7e1c-11eb-92ae-5c520cd7968d.png)
+
+
+In this page, information of wireless access point will be display on the table.
+
+All scanning information including the previous scan result, will be recorded in the file and the application will read the file’s information and display it in this tab.
+
+If ESSID changed, the column of ESSID would be updated. Select and double click the table bar when the target is on the list.
+
+**Tools: Aircrack-ng **
+**Command: echo "BSSID" > filter.txt **
+
+
+![image](https://user-images.githubusercontent.com/51657418/110152461-bd986f80-7e1c-11eb-952c-d63159cad799.png)
+
+
+After the user clicked the “Client-less” button, a loading page will be directed. It means the application is launching the Client-less attack to the wireless router and capturing the PMKID from the wireless router.
+
+![image](https://user-images.githubusercontent.com/51657418/110152478-c5f0aa80-7e1c-11eb-8440-07c061c11df3.png)
+
+If the user associated with the rouge wireless access point and the PMKID is captured from the wireless router successfully, a result page will be directed, and a message will be pop up to inform the user the attack is completed as expected.
+
+## MAC-Spoofing
+
+It is a good practice to change the mac address before doing a penetration test because the MAC filtering function may be enabled for some wireless routers. 
+
+![image](https://user-images.githubusercontent.com/51657418/110152526-d43ec680-7e1c-11eb-81e5-d86f741282d1.png)
+
+This page shows clients that have connected to wireless access points before.
+Select and double click the table bar to change the wireless adapter’s MAC address to camouflage as the one of above client on the table.
+
+![image](https://user-images.githubusercontent.com/51657418/110152545-da34a780-7e1c-11eb-9b84-367b1a595a9b.png)
+
+
+Another page will be directed and shows any client that is connected to the targeted wireless access point. In the middle of the table, ESSID with client BSSID will be displayed.
+
+
+If the user wants to change the MAC address with manual operation, the user can insert the MAC address in the text area which is under the row with “add MAC-address to MAC spoofing” description and click “add” button to perform MAC spoofing.
+
+
+![image](https://user-images.githubusercontent.com/51657418/110152575-e1f44c00-7e1c-11eb-90ff-49e01b8bfd0b.png)
 
 
 
