@@ -27,6 +27,7 @@ Before running the program,please perpare the environment and hardware
 #Set up environment
 
 ##Hardware
+
     1.computer
     2.one Wi-Fi adpter[for aircrack-ng]
     3.one Wi-Fi router [be attack target]
@@ -34,6 +35,7 @@ Before running the program,please perpare the environment and hardware
     5.a server with powerful gpu (Used : pc with GTX1080 x 4 )
 
 ##Software
+
     1.Ubuntu [set up in VMware]
 
 
